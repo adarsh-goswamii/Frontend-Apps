@@ -5,7 +5,8 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
-      "@store/*": ["store/*"]
+      "@store/*": ["store/*"],
+      "@apis/*": ["apis/*"]
     }
   },
   "exclude": ["node_modules", "dist"]

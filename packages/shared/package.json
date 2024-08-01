@@ -1,8 +1,10 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/shared",
   "version": "0.0.0",
   "exports": {
-    "./*": "./index.ts"
+    "./*": "./index.ts",
+    "./atoms/*": "./atoms/index.ts",
+    "./api/*": "./api/index.ts"
   },
   "license": "MIT",
   "scripts": {
@@ -17,6 +19,7 @@
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
-    "@mui/material": "^5.16.6"
+    "@mui/material": "^5.16.6",
+    "axios": "^1.7.2"
   }
 }

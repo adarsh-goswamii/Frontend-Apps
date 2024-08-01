@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@store': path.resolve(__dirname, 'src/store'),
+      '@apis': path.resolve(__dirname, 'src/apis'),
     },
   },
 })
