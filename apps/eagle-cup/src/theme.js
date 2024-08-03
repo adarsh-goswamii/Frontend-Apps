@@ -15,43 +15,36 @@ const customTheme = () => {
       },
     },
     typography: {
-      fontFamily: ' "", "Roboto", "Helvetica", "Arial", "sans-serif" ',
+      fontFamily: ' "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif" ',
       fontWeightLight: 300,
       fontWeightRegular: 400,
       fontWeightMedium: 500,
       fontWeightSemiBold: 700,
       fontWeightBold: 800,
       h1: {
-        fontSize: "40px",
-        lineHeight: 1.2
+        fontSize: "2.5rem"
       },
       h2: {
-        fontSize: "40px",
-        lineHeight: 1.2
+        fontSize: "2rem"
       },
       h3: {
-        fontSize: "40px",
-        lineHeight: 1.2
+        fontSize: "1.75rem"
       },
       h4: {
-        fontSize: "40px",
-        lineHeight: 1.2
+        fontSize: "1.5rem"
       },
-      subtitle: {
-        fontSize: "40px",
-        lineHeight: 1.2
+      subtitle1: {
+        fontSize: "1.25rem"
       },
       body1: {
-        fontSize: "40px",
-        lineHeight: 1.2
+        fontSize: "1rem"
       },
-      label: {
-        fontSize: "40px",
-        lineHeight: 1.2
+      overline: {
+        fontSize: "0.875rem",
+        textTransform: "none"
       },
       caption: {
-        fontSize: "40px",
-        lineHeight: 1.2
+        fontSize: "0.875rem"
       },
 
     }

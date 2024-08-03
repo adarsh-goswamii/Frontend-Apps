@@ -9,7 +9,8 @@
       "@shared/api/*": ["./api/*"],
       "@shared/utils/*": ["./utils/*"],
       "@shared/types/*": ["./types/*"],
-      "@shared/constants/*": ["./constants/*"]
+      "@shared/constants/*": ["./constants/*"],
+      "@shared/styles/*": ["./styles/*"],
     }
   },
   "extends": "@repo/typescript-config/base.json",

@@ -2,11 +2,13 @@ import React from "react";
 import { Typography as MUITypography } from "@mui/material";
 import { type TypographyProps  } from "@mui/material/Typography/Typography";
 
-type Props = TypographyProps; 
+interface Props extends TypographyProps {
+  className?: string;
+}; 
 
-const Typography = ({ children, ...rest }: Props): React.ReactElement => {
+const Typography = ({ children, className, ...rest }: Props): React.ReactElement => {
   return (
-    <MUITypography {...rest}>
+    <MUITypography {...rest} classes={{ root: className }}>
       {children}
     </MUITypography>
   );
