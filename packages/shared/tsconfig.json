@@ -1,8 +1,18 @@
 {
   "compilerOptions": {
-    "jsx": "react"
+    "jsx": "react",
+    "paths": {
+      "@atoms/*": ["./atoms/*"],
+      "@molecules/*": ["./molecules/*"],
+      "@organisms/*": ["./organisms/*"],
+      "@templates/*": ["./templates/*"],
+      "@shared/api/*": ["./api/*"],
+      "@shared/utils/*": ["./utils/*"],
+      "@shared/types/*": ["./types/*"],
+      "@shared/constants/*": ["./constants/*"]
+    }
   },
   "extends": "@repo/typescript-config/base.json",
   "include": ["."],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
 }
