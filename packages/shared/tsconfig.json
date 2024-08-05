@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-jsx",
+    "strict": true,
+    "target": "es6",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "paths": {
       "@atoms/*": ["./atoms/*"],
       "@molecules/*": ["./molecules/*"],

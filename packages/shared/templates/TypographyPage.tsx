@@ -1,6 +1,5 @@
 import Typography from '@atoms/typography/Typography';
 import { BODY_1, CAPTION, H1, H2, H3, H4, LABEL, SUBTITLE, WEIGHT_BOLD } from '@shared/constants/material-ui/Typography';
-import React from 'react';
 
 export const TypographyPage = () => {
   return (
