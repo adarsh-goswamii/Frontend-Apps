@@ -1,0 +1,1 @@
+export * from "@atoms/typography/Typography";

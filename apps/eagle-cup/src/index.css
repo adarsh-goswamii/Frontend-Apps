@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.humane {
+  font-family: "humane", "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif" !important;
+}
+
+@font-face {
+  font-family: "humane";
+  src: url(./assets/fonts/humane/Humane-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "humane";
+  src: url(./assets/fonts/humane/Humane-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "humane";
+  src: url(./assets/fonts/humane/Humane-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "humane";
+  src: url(./assets/fonts/humane/Humane-SemiBold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "humane";
+  src: url(./assets/fonts/humane/Humane-Bold.otf);
+  font-weight: 800;
+}
+
+
+@font-face {
+  font-family: "sans-serif-pro";
+  src: url(./assets/fonts/source-serif-pro/SourceSerifPro-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "sans-serif-pro";
+  src: url(./assets/fonts/source-serif-pro/SourceSerifPro-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "sans-serif-pro";
+  src: url(./assets/fonts/source-serif-pro/SourceSerifPro-Semibold.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "sans-serif-pro";
+  src: url(./assets/fonts/source-serif-pro/SourceSerifPro-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "sans-serif-pro";
+  src: url(./assets/fonts/source-serif-pro/SourceSerifPro-Black.otf);
+  font-weight: 800;
+}
