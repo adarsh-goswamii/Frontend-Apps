@@ -4,7 +4,8 @@ const customTheme = () => {
   return createTheme({
     palette: {
       typography: {
-        primary: "#000"
+        primary: "#000",
+        white: "#FFF"
       },
       background: {
         white: "#FFF"
@@ -15,7 +16,7 @@ const customTheme = () => {
       },
     },
     typography: {
-      fontFamily: ' "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif" ',
+      fontFamily: '"garamond", "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif" ',
       fontWeightLight: 300,
       fontWeightRegular: 400,
       fontWeightMedium: 500,
