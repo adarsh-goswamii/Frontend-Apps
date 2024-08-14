@@ -45,7 +45,7 @@ const customTheme = () => {
         textTransform: "none"
       },
       caption: {
-        fontSize: "0.875rem"
+        fontSize: "0.725rem"
       },
 
     }
