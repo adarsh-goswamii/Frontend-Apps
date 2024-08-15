@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 216px;
+  max-width: 216px;
+  min-width: 216px;
+  height: 342px;
+  min-height: 342px;
+  max-height: 342px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 0px;
+  // transform: translateY(82px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #00175F 0%, transparent 100%);
+    z-index: 2;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+
+  &__text {
+    z-index: 3;
+    padding: 0px 8px;
+  }
+}
