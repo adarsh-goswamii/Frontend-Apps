@@ -24,3 +24,4 @@ export type COLORS =
   | typeof muiconst.COLOR_LIGHT
   | typeof muiconst.COLOR_DARK
   | typeof muiconst.COLOR_DARKER
+  | typeof muiconst.COLOR_RED

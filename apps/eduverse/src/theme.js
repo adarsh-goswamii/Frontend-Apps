@@ -1,15 +1,16 @@
-import {createTheme} from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
 const customTheme = () => {
   return createTheme({
     palette: {
       typography: {
         primary: "#1a1a1a",
-        white: "#FFF"
+        white: "#FFF",
+        blue: "#368AF2",
+        red: "#FF5858",
       },
       background: {
-        white: "#FFF",
-        grayLight: "#F5F5F5"
+        white: "#FFF"
       },
       border: {
         grayLight: "#F7F7F7",
@@ -17,7 +18,7 @@ const customTheme = () => {
       },
     },
     typography: {
-      fontFamily: '"garamond", "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif" ',
+      fontFamily: '"poppins", "sans-serif-pro", "Roboto", "Helvetica", "Arial", "sans-serif" ',
       fontWeightLight: 300,
       fontWeightRegular: 400,
       fontWeightMedium: 500,
