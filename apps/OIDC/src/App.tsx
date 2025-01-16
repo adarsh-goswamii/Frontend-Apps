@@ -10,36 +10,34 @@ function App() {
   const checkAuth = () => true;
 
   return (
-    <div>
-      <Routes>
-        <Route
-          path="/admin/*"
-          element={
-            <AppRoute checkAuth={checkAuth} location={location}>
-              <AdminRoutes />
-            </AppRoute>
-          }
-        />
-        <Route
-          path="/client/*"
-          element={
-            <AppRoute checkAuth={checkAuth} location={location}>
-              <ClientRoutes />
-            </AppRoute>
-          }
-        />
-        <Route
-          path="/"
-          element={
-            <AppRoute checkAuth={checkAuth} location={location}>
-              <PublicRoutes />
-            </AppRoute>
-          }
-        />
+    <Routes>
+      <Route
+        path="/admin/*"
+        element={
+          <AppRoute checkAuth={checkAuth} location={location}>
+            <AdminRoutes />
+          </AppRoute>
+        }
+      />
+      <Route
+        path="/client/*"
+        element={
+          <AppRoute checkAuth={checkAuth} location={location}>
+            <ClientRoutes />
+          </AppRoute>
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <AppRoute checkAuth={checkAuth} location={location}>
+            <PublicRoutes />
+          </AppRoute>
+        }
+      />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </div>
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

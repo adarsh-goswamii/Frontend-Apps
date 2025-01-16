@@ -3,18 +3,37 @@ import { createTheme } from "@mui/material/styles";
 const customTheme = () => {
   return createTheme({
     palette: {
-      typography: {
-        primary: "#1a1a1a",
-        white: "#FFF",
-        blue: "#368AF2",
-        red: "#FF5858",
+      mode: 'dark', // Enables dark mode
+      primary: {
+        main: '#5F4BB6', // Light blue
+        contrastText: '#ffffff', // White text on primary
+      },
+      secondary: {
+        main: '#f48fb1', // Light pink
+        contrastText: '#ffffff',
       },
       background: {
-        white: "#FFF"
+        default: '#121212', // Dark background
+        paper: '#1e1e1e', // Slightly lighter background for surfaces (cards, dialogs, etc.)
+        white: '#fff', 
       },
-      border: {
-        grayLight: "#F7F7F7",
-        grayDark: "#EFEFEF",
+      text: {
+        primary: '#ffffff', // Main text color
+        secondary: '#b0b0b0', // Less prominent text
+        disabled: '#6c6c6c', // Disabled text
+      },
+      divider: '#303030', // Divider color
+      error: {
+        main: '#ef5350', // Red for errors
+      },
+      warning: {
+        main: '#ff9800', // Orange for warnings
+      },
+      info: {
+        main: '#29b6f6', // Light blue for info messages
+      },
+      success: {
+        main: '#66bb6a', // Green for success messages
       },
     },
     typography: {

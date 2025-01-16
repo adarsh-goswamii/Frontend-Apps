@@ -2,6 +2,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { TextField, TextFieldClasses, TextFieldVariants } from "@mui/material";
 import { useState } from "react";
+import styles from './passwordField.module.scss';
 
 type PasswordFieldProps = {
   value: string;
@@ -12,6 +13,7 @@ type PasswordFieldProps = {
   error?: boolean; 
   onBlur?: React.FocusEventHandler<HTMLInputElement | HTMLTextAreaElement>;
   classes?: Partial<TextFieldClasses>;
+  size?: "small" | "medium";
 };
 
 const PasswordField = ({
@@ -22,7 +24,8 @@ const PasswordField = ({
   helperText = "",
   error = false,
   onBlur,
-  classes = {}
+  classes = {},
+  size = 'small'
 }: PasswordFieldProps) => {
   const [showPassword, setShowPassword] = useState<boolean>(false);
 
@@ -30,18 +33,20 @@ const PasswordField = ({
     <TextField
       label={label}
       value={value}
+      fullWidth={true}
       variant={variant}
       onChange={(e) => setValue(e?.target?.value)}
       helperText={helperText}
       error={error}
       classes={classes}
+      size={size}
       onBlur={onBlur}
       type={showPassword ? 'text': 'password'}
       InputProps={{
         endAdornment: showPassword ? (
-          <VisibilityIcon onClick={() => setShowPassword(false)} />
+          <VisibilityIcon onClick={() => setShowPassword(false)} className={styles.clickable} />
         ) : (
-          <VisibilityOffIcon onClick={() => setShowPassword(true)} />
+          <VisibilityOffIcon onClick={() => setShowPassword(true)} className={styles.clickable} />
         ),
       }}
     />

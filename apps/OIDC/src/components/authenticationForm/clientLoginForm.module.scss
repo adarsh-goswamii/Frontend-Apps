@@ -1,0 +1,20 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+
+  &__registerText {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__heading {
+    margin-bottom: 16px !important;
+  }
+
+  &__clickable {
+    cursor: pointer;
+  }
+}

@@ -1,6 +1,7 @@
 import AuthLayout from "@components/layout/AuthLayout";
-import styles from "./clientAuth.module.scss";
 import { useState } from "react";
+import styles from "./clientAuth.module.scss";
+import ClientLogin from "@components/authenticationForm/ClientLoginForm";
 
 const ClientAuth = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true);
@@ -8,10 +9,7 @@ const ClientAuth = () => {
   return (
     <AuthLayout>
       <div className={styles.form}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit
-        fugit ullam accusamus corrupti! Accusamus adipisci obcaecati, earum hic
-        praesentium neque itaque sapiente dolorum dicta, eveniet, voluptatem
-        assumenda architecto magni.
+        <ClientLogin />
       </div>
     </AuthLayout>
   );

@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React from "react";
 import styles from "./layout.module.scss";
 
@@ -7,10 +8,13 @@ interface AuthLayoutProps {
 
 const AuthLayout = ({ children }: AuthLayoutProps) => {
   return (
-    <div className={styles.authLayout}>
+    <Box sx={{ bgcolor: "background.default" }} className={styles.authLayout}>
       {children}
-      <span className={styles.authLayout__circle} />
-    </div>
+      <Box
+        className={styles.authLayout__circle}
+        sx={{ bgcolor: "background.white" }}
+      />
+    </Box>
   );
 };
 
