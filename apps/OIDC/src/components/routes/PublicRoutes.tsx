@@ -1,17 +1,19 @@
-import Layout from "@components/layout/Layout";
-import Home from "@pages/home/Home";
-import Login from "@pages/login/Login";
 import NotFound from "@pages/NotFound";
+import { getComponentFromRouteObject } from "@shared/utils/component";
 import { Route, Routes } from "react-router-dom";
+import { publicRoutes } from "./routes";
 
 const PublicRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
+      {publicRoutes?.map((item) => (
+        <Route
+          key={item?.path}
+          path={item?.path}
+          element={getComponentFromRouteObject(item)}
+        />
+      ))}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

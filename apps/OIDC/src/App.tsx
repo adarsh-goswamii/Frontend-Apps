@@ -28,7 +28,7 @@ function App() {
         }
       />
       <Route
-        path="/"
+        path="/*"
         element={
           <AppRoute checkAuth={checkAuth} location={location}>
             <PublicRoutes />

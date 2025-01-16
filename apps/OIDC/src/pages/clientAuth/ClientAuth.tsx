@@ -1,7 +1,8 @@
+import ClientLogin from "@components/authenticationForm/ClientLoginForm";
+import ClientRegister from "@components/authenticationForm/ClientRegisterForm";
 import AuthLayout from "@components/layout/AuthLayout";
 import { useState } from "react";
 import styles from "./clientAuth.module.scss";
-import ClientLogin from "@components/authenticationForm/ClientLoginForm";
 
 const ClientAuth = () => {
   const [isLogin, setIsLogin] = useState<boolean>(true);
@@ -9,7 +10,11 @@ const ClientAuth = () => {
   return (
     <AuthLayout>
       <div className={styles.form}>
-        <ClientLogin />
+        {isLogin ? (
+          <ClientLogin onRegisterClick={() => setIsLogin(false)} />
+        ) : (
+          <ClientRegister onLoginClick={() => setIsLogin(true)} />
+        )}
       </div>
     </AuthLayout>
   );

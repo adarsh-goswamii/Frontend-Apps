@@ -19,7 +19,17 @@ export const clientRoutes: RouteType[] = [
     exact: true,
     hideHeader: false,
     component: lazy(() =>
-      loadComponentHandler(() => import("../../pages/clientLogin/index"))
+      loadComponentHandler(() => import("../../pages/clientAuth/index"))
     )
   },
+];
+
+export const publicRoutes: RouteType[] = [
+  {
+    id: 1,
+    path: 'auth',
+    exact: true,
+    hideHeader: false,
+    component: lazy(() => loadComponentHandler(() => import("../../pages/userAuth/index")))
+  }
 ]
